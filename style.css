@@ -15,3 +15,7 @@ h1 {
 p {
     font-size: 18px;
 }
+
+.nav-list {
+    display: flex;
+}
