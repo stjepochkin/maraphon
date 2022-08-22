@@ -6,12 +6,12 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link href="https://unpkg.com/@csstools/normalize.css" rel="stylesheet" />
         <link rel="stylesheet" href="style.css">
-        <title>Марафон 5.0</title>
+        <title>Scandi</title>
     </head>
     <body>
         <header class="header">
             <div class="header-top">
-                <a class="link logo" href=""><img src="/img/logo.svg" alt="">SCANDI</a>
+                <a class="link logo" href=""><img src="img/logo.svg" alt="">SCANDI</a>
                 <nav class="nav">
                     <ul class="nav-list">
                         <li class="item nav-list-item"><a  class="link nav-list-link" href="">О компании</a></li>
@@ -31,12 +31,13 @@
         <main>
             <section class="about_us">
                 <h2 class="title about_us-title">О нас</h2>
+                <img src="img/table.jpg" alt="">
                 <p class="discription about_us-description">Премиальный европейский текстиль — одно из самых главных направлений работы коллектива. Создавать неповторимые интерьеры для наших дорогих клиентов, уделяя внимание мельчайшим деталям — вот то,  что по-настоящему вдохновляет дизайнеров нашей студии. Наш коллектив сделает все, чтобы после сотрудничества с нами,  Вам было приятно сказать: « Да! Это именно то, что действительно достойно моего дома!»</p>
                 <div>
                     <ul class="about_us-numbers">
-                        <li class="item about_us-numbers-item">5 лет опыта</li>
-                        <li class="item about_us-numbers-item">100 проектов</li>
-                        <li class="item about_us-numbers-item">10 наград</li>
+                        <li class="item about_us-numbers-item">5<span>лет опыта</span></li>
+                        <li class="item about_us-numbers-item">100 <span>проектов</span></li>
+                        <li class="item about_us-numbers-item">10 <span>наград</span></li>
                     </ul>
                 </div>
             </section>
@@ -48,27 +49,30 @@
                         <p class="discription our_works-item-discription">В квартире были светлые стены и тёплые цвета. Мы сконцентрировались на отсылках к природе и сделали ребятам уютный интерьер, отсылающий к виллам островов Бали.</p>
                     </div>
                     <div class="our_works_item">
+                        <img src="img/kichen.jpg" alt="">
                     </div>
                     <div class="our_works_item">
+                        <img src="img/living_room.jpg" alt="">
                     </div>
                     <div class="our_works_item">
+                        <img src="img/bedroom.jpg" alt="">
                     </div>
                 </div>    
-                <a class="link our_works-link" href="">Смотреть ещё</a>
+                <a class="link our_works-link" href="">Смотреть ещё</a><img src="img/arrow_more.svg" alt="">
             </section>
             <section class="team">
                 <h2 class="title team-title">Команда</h2>
                 <ul class="team-list">
                     <li class="item team-item">
-                        <img src="/img/masha.jpg" alt="">
+                        <img src="img/masha.jpg" alt="">
                         <p class=" discription team-item-discription">Это Маша, наш главный дизайнер. Она отвечает за дизайн-проект, приезжает к вам домой, общается и помогает сделать вашу квартиру красивой и уютной.</p>
                     </li>
                     <li class="item team-item">
-                        <img src="/img/sasha.jpg" alt="">
+                        <img src="img/sasha.jpg" alt="">
                         <p class="discription team-item-discription">С нашим менеджером Сашей вы познакомитесь в первую очередь. Она проконсультирует вас, соберёт все документы и ответит на все вопросы.</p>
                     </li>
                     <li class="item team-item">
-                        <img src="/img/katya.jpg" alt="">
+                        <img src="img/katya.jpg" alt="">
                         <p class="discription team-item-discription">Катя тоже занимается дизайном. Она всегда находит общий язык с клиентами и точно знает, как обустроить дом так, чтобы вам понравилось.</p>
                     </li>
                 </ul>
@@ -85,16 +89,27 @@
             <section class="comments">
                 <h2 class="title comments-title">Отзывы</h2>
                 <button></button>
-                <p class="discription comments-description">«Восторг! Спасибо, за комфортную жизнь. Очень рада, что выбрала вашу студию для украшения своего дома. Работа шла быстро, было очень приятно общаться и взаимодествовать с сотрудниками. Не ожидала, что это будет так легко! Буду советовать и своим друзьям к вам обращаться!»</p>
-                <address class="comments-address">АННА БЕЛОВСКАЯ</address>
+                <div>
+                    <p class="discription comments-description">«Восторг! Спасибо, за комфортную жизнь. Очень рада, что выбрала вашу студию для украшения своего дома. Работа шла быстро, было очень приятно общаться и взаимодествовать с сотрудниками. Не ожидала, что это будет так легко! Буду советовать и своим друзьям к вам обращаться!»</p>
+                    <address class="comments-address">АННА БЕЛОВСКАЯ</address>
+                </div>
+                <div>
+                    <img src="img/living_room2.jpg" alt="">
+                    <img src="img/kichen2.jpg" alt="">
+                </div>
                 <button></button>
             </section>
             <section class="request">
-                <h2 class="title request-title">Оставить заявку</h2>
-                <p class="discription request-discription">Оставьте свои контакты. Менеджер перезвонит в удобное вам время и ответит на все вопросы.</p>
-                <input type="text" name="" id="" placeholder="Ваше имя">
-                <input type="tel" name="" id="" placeholder="Введите телефон">
-                <button>Оставить заявку</button>
+                <div class="request-form">
+                    <h2 class="title request-title">Оставить заявку</h2>
+                    <p class="discription request-discription">Оставьте свои контакты. Менеджер перезвонит в удобное вам время и ответит на все вопросы.</p>
+                    <input type="text" name="" id="" placeholder="Ваше имя">
+                    <input type="tel" name="" id="" placeholder="Введите телефон">
+                    <button>Оставить заявку</button>
+                 </div>
+                <div class="request-map">
+                    <img src="img/request.jpg" alt="">
+                </div>  
             </section>
         </main>
         <footer class="footer">
