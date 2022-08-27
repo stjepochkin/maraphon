@@ -4,6 +4,7 @@
         <meta charset="UTF-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="shortcut icon" href="img/logo.svg">
         <link href="https://unpkg.com/@csstools/normalize.css" rel="stylesheet" />
         <link rel="stylesheet" href="style.css">
         <title>Scandi</title>
@@ -11,7 +12,7 @@
     <body>
         <header class="header">
             <div class="header-top">
-                <a class="link logo" href=""><img src="img/logo.svg" alt="">SCANDI</a>
+                <a class="link logo" href=""><img class="logo-image" src="img/logo.svg" alt="">SCANDI</a>
                 <nav class="nav">
                     <ul class="nav-list">
                         <li class="item nav-list-item"><a  class="link nav-list-link" href="">О компании</a></li>
@@ -24,61 +25,63 @@
                 </nav>
                 <a class="link" href="tel:++79818574624">+7 (981) 857-46-24</a>
             </div>
-            <h1 class="title header-title">Поможем сделать вашу квартиру уютнее</h1>
-            <p class="discription header-description">Подбираем текстиль, мебель и аксессуары под ваш интерьер, находим магазины и помогаем организовать доставку</p>
-            <a class="link header-button" href="">Оставить заявку</a>
+            <div class="header-main">
+                <h1 class="title header-title">Поможем сделать вашу квартиру уютнее</h1>
+                <p class="discription header-description">Подбираем текстиль, мебель и аксессуары под ваш интерьер, находим магазины и помогаем организовать доставку</p>
+                <a class="link button header-button" href="">Оставить заявку</a>
+            </div>
         </header>
         <main>
-            <section class="about_us">
+            <section class="section about_us">
                 <h2 class="title about_us-title">О нас</h2>
-                <img src="img/table.jpg" alt="">
-                <p class="discription about_us-description">Премиальный европейский текстиль — одно из самых главных направлений работы коллектива. Создавать неповторимые интерьеры для наших дорогих клиентов, уделяя внимание мельчайшим деталям — вот то,  что по-настоящему вдохновляет дизайнеров нашей студии. Наш коллектив сделает все, чтобы после сотрудничества с нами,  Вам было приятно сказать: « Да! Это именно то, что действительно достойно моего дома!»</p>
+                <img  class="about_us-image" src="img/table.jpg" alt="">
+                <p class="discription about_us-description">Премиальный европейский текстиль — одно из самых главных направлений работы коллектива. Создавать неповторимые интерьеры для наших дорогих клиентов, уделяя внимание мельчайшим деталям — вот то,  что по-настоящему вдохновляет дизайнеров нашей студии. <br><br> Наш коллектив сделает все, чтобы после сотрудничества с нами,  Вам было приятно сказать: « Да! Это именно то, что действительно достойно моего дома!»</p>
                 <div>
-                    <ul class="about_us-numbers">
-                        <li class="item about_us-numbers-item">5<span>лет опыта</span></li>
-                        <li class="item about_us-numbers-item">100 <span>проектов</span></li>
-                        <li class="item about_us-numbers-item">10 <span>наград</span></li>
+                    <ul class="about_us-footer">
+                        <li class="item about_us-item"><span class="about_us-item-numbers">5</span>лет опыта</li>
+                        <li class="item about_us-item"><span class="about_us-item-numbers">100</span>проектов</li>
+                        <li class="item about_us-item"><span class="about_us-item-numbers">10</span> наград</li>
                     </ul>
                 </div>
             </section>
-            <section class="our_works">
+            <section class="section our_works">
                 <h2 class="title our_works-title">Наши работы</h2>
-                <div class="our_work-list">
-                    <div class="our_works_item">
-                        <h3 class="title our_works-item-title">Квартира студия</h3>
+                <ul class="item our_work-list">
+                    <li class="our_works_item our_works--bedroom">
+                        <h3 class="title our_works-item-title">Квартира студия<br>30 кв.м.</h3>
                         <p class="discription our_works-item-discription">В квартире были светлые стены и тёплые цвета. Мы сконцентрировались на отсылках к природе и сделали ребятам уютный интерьер, отсылающий к виллам островов Бали.</p>
-                    </div>
-                    <div class="our_works_item">
+                    </li>
+                    <li class="our_works_item our_works--kitchen">
                         <img src="img/kichen.jpg" alt="">
-                    </div>
-                    <div class="our_works_item">
+                    </li>
+                    <li class="our_works_item our_works--living_room">
                         <img src="img/living_room.jpg" alt="">
-                    </div>
-                    <div class="our_works_item">
-                        <img src="img/bedroom.jpg" alt="">
-                    </div>
-                </div>    
-                <a class="link our_works-link" href="">Смотреть ещё</a><img src="img/arrow_more.svg" alt="">
+                    </li>
+                    <li class="our_works_item our_works--bathroom">
+                        <img src="img/bathroom.jpg" alt="">
+                    </li>
+                </ul>    
+                <a class="link our_works-link" href="">Смотреть ещё</a><img class="our_works-link-image" src="img/arrow_more.svg" alt="">
             </section>
-            <section class="team">
+            <section class="section team">
                 <h2 class="title team-title">Команда</h2>
                 <ul class="team-list">
                     <li class="item team-item">
-                        <img src="img/masha.jpg" alt="">
+                        <img class="team-item-image" src="img/masha.jpg" alt="">
                         <p class=" discription team-item-discription">Это Маша, наш главный дизайнер. Она отвечает за дизайн-проект, приезжает к вам домой, общается и помогает сделать вашу квартиру красивой и уютной.</p>
                     </li>
                     <li class="item team-item">
-                        <img src="img/sasha.jpg" alt="">
+                        <img class="team-item-image" src="img/sasha.jpg" alt="">
                         <p class="discription team-item-discription">С нашим менеджером Сашей вы познакомитесь в первую очередь. Она проконсультирует вас, соберёт все документы и ответит на все вопросы.</p>
                     </li>
                     <li class="item team-item">
-                        <img src="img/katya.jpg" alt="">
+                        <img class="team-item-image" src="img/katya.jpg" alt="">
                         <p class="discription team-item-discription">Катя тоже занимается дизайном. Она всегда находит общий язык с клиентами и точно знает, как обустроить дом так, чтобы вам понравилось.</p>
                     </li>
                 </ul>
             </section>
-            <section class="how_are_we_work">
-                <h2 class="title how_are_we_work-title">Как мы рабатаем</h2>
+            <section class="section how_are_we_work">
+                <h2 class="title how_are_we_work-title">Как мы работаем</h2>
                 <ol class="how_are_we_work-list">
                     <li class="how_we_are_work-item">Знакомимся, выезжаем на объект, утверждаем концепцию, подписываем договор.</li>
                     <li class="how_we_are_work-item">Подбираем мебель, текстиль, аксессуары. Делаем 3D-визуализацию.</li>
@@ -86,27 +89,31 @@
                     <li class="how_we_are_work-item">Воплощаем проект в жизнь: расставляем мебель и цветы, вешаем шторы, находим места для мелочей</li>
                 </ol>
             </section>
-            <section class="comments">
+            <section class="section comments">
                 <h2 class="title comments-title">Отзывы</h2>
-                <button></button>
-                <div>
-                    <p class="discription comments-description">«Восторг! Спасибо, за комфортную жизнь. Очень рада, что выбрала вашу студию для украшения своего дома. Работа шла быстро, было очень приятно общаться и взаимодествовать с сотрудниками. Не ожидала, что это будет так легко! Буду советовать и своим друзьям к вам обращаться!»</p>
-                    <address class="comments-address">АННА БЕЛОВСКАЯ</address>
+                <div class="comments-wrapper">
+                    <button class="comments-button comments-button--left"></button>
+                    <div class="comments-info">
+                        <p class="discription comments-description">«Восторг! Спасибо, за комфортную жизнь. Очень рада, что выбрала вашу студию для украшения своего дома. <br><br>Работа шла быстро, было очень приятно общаться и взаимодествовать с сотрудниками. Не ожидала, что это будет так легко! <br><br>Буду советовать и своим друзьям к вам обращаться!»<br><br></p>
+                        <address class="comments-address">АННА БЕЛОВСКАЯ</address>
+                    </div>
+                    <div class="comments-illustrations">
+                        <img class="comments-image" src="img/living_room2.jpg" alt="">
+                        <img class="comments-image" src="img/kichen2.jpg" alt="">
+                    </div>
+                    <button class="comments-button comments-button--right"></button>
                 </div>
-                <div>
-                    <img src="img/living_room2.jpg" alt="">
-                    <img src="img/kichen2.jpg" alt="">
-                </div>
-                <button></button>
             </section>
-            <section class="request">
-                <div class="request-form">
-                    <h2 class="title request-title">Оставить заявку</h2>
-                    <p class="discription request-discription">Оставьте свои контакты. Менеджер перезвонит в удобное вам время и ответит на все вопросы.</p>
-                    <input type="text" name="" id="" placeholder="Ваше имя">
-                    <input type="tel" name="" id="" placeholder="Введите телефон">
-                    <button>Оставить заявку</button>
-                 </div>
+            <section class="section request">
+                <div class="request-left">
+                    <h2 class="title request-title">Оставить заявку</h2> 
+                    <form class="request-form">
+                        <p class="discription request-discription">Оставьте свои контакты. Менеджер перезвонит в удобное вам время и ответит на все вопросы.</p>
+                        <input class="request-input" type="text" name="" id="" placeholder="Ваше имя">
+                        <input class="request-input" type="tel" name="" id="" placeholder="Введите телефон">
+                        <button class="button request-button" type="button">Оставить заявку</button>
+                    </form>
+                </div>
                 <div class="request-map">
                     <img src="img/request.jpg" alt="">
                 </div>  

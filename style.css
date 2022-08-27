@@ -1,46 +1,366 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500&display=swap');
 
 body {
+    margin: 0 auto;
     width: 1400px;
     font-family: 'Montserrat', sans-serif;
     color: #533738;
+    background-color: #E5E5E5;
+    box-sizing: border-box;
 
 }
 
+img {
+    vertical-align: top;
+  }
+
 .link {
+    box-sizing: border-box;
     text-decoration: none;
+    color: #533738;
 }
 
 .item {
     list-style-type: none;
 }
 
-.header-top {
-    display: flex;
-}
-
-.header-title {
-    font-size: 50px;
-    font-weight: normal;
-    line-height: 62px;
+.title {
+    margin: 0;
+    margin-bottom: 40px;
+    text-align: center;
+    font-size: 40px;
+    font-weight: 400;
+    text-transform: uppercase;
 }
 
 .discription {
+    margin: 0;
     font-size: 18px;
+    line-height: 30px;
+}
+
+.button {
+    display: block;
+    width: 309px;
+    height: 74px;
+    background-color: #CC8B86;
+    font-size: 20px;
+    font-weight: 500;
+    text-align: center;
+    padding-top: 25px;
+    padding-bottom: 24px;
+}
+
+header {
+    background: url("img/background-header.jpg") no-repeat;
+    background-size: contain;
+    padding: 36px 100px 168px;
+}
+
+.header-top {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 91px;
+}
+
+.logo-image {
+    vertical-align: middle;
+}
+
+.header-main {
+    padding-left: 184px;
+    width: 534px;
+}
+
+.header-title {
+    text-align: start;
+    margin-bottom: 24px;
+    font-size: 50px;
+    font-weight: normal;
+    line-height: 62px;
+    text-transform: none;
+}
+
+.header-description {
+    width: 445px;
+    margin-bottom: 21px;
 }
 
 .nav-list {
     display: flex;
 }
 
+.nav-list-item {
+    margin-right: 26px;
+}
+
+.section {
+    margin-bottom: 65px;
+}
+
+.about_us {
+    text-align: center;
+}
+
+.about_us-image {
+    margin-right: 83.5px;
+}
+
 .about_us-numbers {
     display: flex;
 }
 
+.about_us-description {
+    display: inline-block;
+    vertical-align: top;
+    text-align: start;
+    width: 520px;
+}
+
+.about_us-footer {
+    display: flex;
+    justify-content: space-around;
+    background: #8D7370;
+    color: #FFF;
+    padding-top: 85px;
+    padding-bottom: 81px;
+}
+
+.about_us-item {
+    font-size: 30px;
+}
+
+.about_us-item-numbers {
+    display: block;
+    font-size: 50px;
+}
+
+.our_works {
+    text-align: center;
+    padding: 0 100px;
+}
+
+.our_works-title {
+    text-align: start;
+}
+
+.our_work-list {
+    display: grid;
+    text-align: center;
+    gap: 20px;
+    padding-left: 0;
+    grid-template-columns: 488px 184px 488px;
+    grid-template-rows: 451px;
+    grid-template-areas: 
+        "bedroom kitchen kitchen"
+        "living_room living_room bathroom"
+}
+
+.our_works-item-title {
+    text-transform: none;
+}
+
+.our_works-item-discription {
+    text-align: start;
+}
+
+.our_works--bedroom {
+    grid-area: bedroom;
+    position: relative;
+    color: #FFF;
+    background-image: url("img/bedroom.jpg");
+    background-color: rgba(100, 72, 69, 0.8);
+    padding: 86px 35px;
+}
+
+.our_works--bedroom>* {
+    position: relative;
+    z-index: 1;
+}
+
+.our_works_item.our_works--bedroom:after {
+    content: "";
+    position: absolute;
+    background-color: rgba(100, 72, 69, 0.8);
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+.our_works--kitchen {
+    grid-area: kitchen;
+}
+
+.our_works--living_room {
+    grid-area: living_room;
+}
+
+.our_works--bathroom {
+    grid-area: bathroom;
+}
+
+.our_works-link {
+    font-size: 30px;
+    margin-right: 10px;
+}
+
+.our_works-link-image {
+    vertical-align: baseline;
+}
+
+.team {
+    background-color: #E2C4BA;
+    padding-top: 50px;
+    margin-bottom: 0;
+}
+
 .team-list {
     display: flex;
+    justify-content: space-around;
+    margin-bottom: 0;
+}
+
+.team-item {
+    flex-basis: 320px;
+}
+
+.team-item-image {
+    margin-bottom: 10px;
+}
+
+.how_are_we_work {
+    background-color: #E2C4BA;
+    padding: 0 100px 80px;
+    counter-reset: num;
+}
+
+.how_we_are_work-item:before {
+    content: counter(num);
+    counter-increment: num;
+    display: block;
+    width: 35px;
+    height: 35px;
+    font-size: 30px;
+    font-weight: 500;
+    text-align: center;
+    margin: 0 auto 20px;
+    color: #FFF;
+    background-color: #8D736F;
+    border-radius: 50%;
+    border: 15.5px solid transparent;
+}
+
+.how_are_we_work-list {
+    display: flex;
+    list-style-type: none;
+}
+
+.how_we_are_work-item {
+    flex-basis: 285px;
+}
+
+.how_we_are_work-item:not(:last-child) {
+    margin-right: 20px;
+}
+
+.comments-wrapper {
+    display: flex;
+    justify-content: center;
+    /* flex-direction: column; */
+}
+
+.comments-button {
+    height: 72px;
+    width: 72px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    border: none;
+    border-radius: 50%;
+    align-self: center;
+}
+
+.comments-button--left {
+    background-image: url("img/left_arrow.svg");
+    margin-right: 29px;
+}
+
+.comments-button--right {
+    background-image: url("img/right_arrow.svg");
+    margin-left: 29px ;
+}
+
+.comments-info {
+    flex-basis: 335px;
+    margin-right: 20px;
+}
+
+.comments-image {
+    display: block;
+}
+
+.comments-image:not(:last-child) {
+    margin-bottom: 15px;
+}
+
+.request {
+    margin-bottom: 0;
+    padding-left: 181px;
+    background: #8D7370;
+    color: #FFF;
+}
+
+.request-left {
+    display: inline-block;
+    margin-right: 20px;    
+    padding-top: 50px;
+    width: 508px;
+    vertical-align: top;
+}
+
+.request-title {
+    text-align: start;
+}
+
+.request-form {
+    display: flex;
+    flex-direction: column;
+}
+
+.request-discription {
+    margin-bottom: 44px;
+}
+
+.request-input {
+    border: none;
+    border-bottom: 1px solid #FFF;
+    color: #FFF;
+    background: #8D7370;
+    height: 30px;
+}
+
+.request-input:not(:last-child) {
+    margin-bottom: 35px;
+}
+
+.request-button {
+    border: none;
+}
+
+.request-map {
+    display: inline-block;
 }
 
 .footer {
     display: flex;
+    padding: 37px 100px;
+}
+
+.footer-link {
+    margin-right: 42px;
+}
+
+.footer-address {
+    margin-right: auto;
 }
